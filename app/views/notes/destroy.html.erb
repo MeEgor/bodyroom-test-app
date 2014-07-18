@@ -1,0 +1,7 @@
+<h1>Удалить заметку №<%= @note.id %>?</h1>
+
+<div>
+  <%= @note.text %>
+</div>
+
+<%= link_to 'Удалить', note_destroy_path(@note.id), method: 'delete' %>

@@ -1,0 +1,12 @@
+<h1>Новая заметка</h1>
+
+<%= form_for @note do |f| %>
+  <div class="container">
+    <%= f.label :text, 'текст заметки' %>
+  </div>
+  <%= f.text_area :text %>
+
+  <div class="container">
+    <%= f.submit "Создать" %>
+  </div>
+<% end %>
