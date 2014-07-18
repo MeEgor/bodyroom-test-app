@@ -1,28 +1,41 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Тестовое задание для BodyRoom
 
-Things you may want to cover:
+Задание:
 
-* Ruby version
+* Необходимо написать веб приложение на языке программирования Ruby.
 
-* System dependencies
+* Приложение должно быть Rack-compatible.
 
-* Configuration
+* Вы можете использовать любой фреймворк.
 
-* Database creation
+* Приложение должно реализовать REST HTTP API описанный в данной документации http://docs.notesapitest.apiary.io/
 
-* Database initialization
+* Приложение должно обеспечивать персистентность данных, выбор БД также остается за вами.
 
-* How to run the test suite
+* Исходный код необходимо разместить на github или bitbucket в публичный репозиторий.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Само приложение нужно развернуть на heroku.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Плюсами будут:
+
+* Наличие тестов
+
+* Поддержка CORS
+
+
+Результат:
+
+* Написано простое приложнеи на Ruby с использованеим фреймворка Ruby on Rails
+
+* Для обработки запросов из данного в задании API используются Rake приложения (Хранятся в папке lib)
+
+* В качестве БД используется SQLite (Задание слишком простое, чтобы заморачиваться над более продвинутой БД)
+
+* Для поддержки CORS и модификации заголовков ответов используется rack-middleware CorsHeaders
+
+
+
+
